@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.index');
 });
 
 
@@ -32,20 +32,6 @@ Route::controller(AdminController::class)->group(function () {
 Route::controller(HomeSlideController::class)->group(function(){
     Route::get('/admin/slider', 'homeslider')->name('home.slide');
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
