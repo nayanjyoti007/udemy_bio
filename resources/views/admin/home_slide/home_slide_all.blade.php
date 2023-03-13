@@ -19,8 +19,10 @@
 
                         <h4 class="card-title mb-3">Edite Home Slide</h4>
 
-                        <form action="{{route('admin.storeProfile')}}" method="post" enctype="multipart/form-data">
+                        <form action="{{route('update.slider')}}" method="post" enctype="multipart/form-data">
                             @csrf
+
+                            <input type="hidden" id="id" name="id" value="{{$homeslide->id}}">
                             <div class="row mb-3">
                                 <label for="example-text-input" class="col-sm-2 col-form-label">Title</label>
                                 <div class="col-sm-10">
@@ -43,7 +45,7 @@
                                     <input class="form-control" type="file" placeholder="" value="" id="home_slide" name="home_slide">
                                 </div>
                                 <div class="col-sm-4">
-                                    <img class="rounded avatar-lg" src="{{ !empty($homeslide->profile) ? asset('uploads/admin/home-slide/'.$homeslide->profile) : asset('uploads/no_image.jpg') }}" alt="Card image cap" id="hvimg">
+                                    <img class="rounded avatar-lg" src="{{ !empty($homeslide->home_slide) ? asset($homeslide->home_slide) : asset('uploads/no_image.jpg') }}" alt="Card image cap" id="hvimg">
                                 </div>
                             </div>
 
