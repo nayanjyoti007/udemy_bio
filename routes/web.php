@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Home\AboutController;
 use App\Http\Controllers\Home\HomeSlideController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -18,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('front.index');
-});
+})->name('home');
 
 
 // Admin All Route
@@ -29,11 +30,19 @@ Route::controller(AdminController::class)->group(function () {
     Route::post('/admin/edit/profile', 'storeProfile')->name('admin.storeProfile');
 });
 
+// Home Slider All Route
 Route::controller(HomeSlideController::class)->group(function(){
     Route::get('/admin/slider', 'homeslider')->name('home.slide');
     Route::post('/admin/update/slide','updateslider')->name('update.slider');
 });
 
+// About Page All Route
+Route::controller(AboutController::class)->group(function(){
+    Route::get('/about/page', 'aboutpage')->name('about.page');
+    Route::post('/admin/update/about','updateabout')->name('update.about');
+    Route::get('/about', 'homeabout')->name('home.about');
+
+});
 
 
 
