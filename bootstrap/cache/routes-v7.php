@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::eaB3EIUy8hNnAUTS',
+            '_route' => 'generated::qSzRMWPq1aivwhTp',
           ),
           1 => NULL,
           2 => 
@@ -310,6 +310,65 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/about/multi/image' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'about.multiimage',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/store/multi/image' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'store.multimage',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/about/all/multi/image' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'about.all.multiimage',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/dashboard' => 
       array (
         0 => 
@@ -405,7 +464,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::mm0uTiSWK7cspuH9',
+            '_route' => 'generated::30g1nvnI6XMiLxnv',
           ),
           1 => NULL,
           2 => 
@@ -441,7 +500,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::nQRC3OL667k3579r',
+            '_route' => 'generated::ZJbmSvWSQQA6oL1H',
           ),
           1 => NULL,
           2 => 
@@ -571,7 +630,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::B4f1VoNK3jsvPJ7Y',
+            '_route' => 'generated::ItE119BKf75v1rOk',
           ),
           1 => NULL,
           2 => 
@@ -837,7 +896,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::eaB3EIUy8hNnAUTS' => 
+    'generated::qSzRMWPq1aivwhTp' => 
     array (
       'methods' => 
       array (
@@ -860,7 +919,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::eaB3EIUy8hNnAUTS',
+        'as' => 'generated::qSzRMWPq1aivwhTp',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1244,6 +1303,116 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'about.multiimage' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'about/multi/image',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Home\\AboutController@multiimage',
+        'controller' => 'App\\Http\\Controllers\\Home\\AboutController@multiimage',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'about.multiimage',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'store.multimage' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'store/multi/image',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Home\\AboutController@storemultimage',
+        'controller' => 'App\\Http\\Controllers\\Home\\AboutController@storemultimage',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'store.multimage',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'about.all.multiimage' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'about/all/multi/image',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Home\\AboutController@allmultiimage',
+        'controller' => 'App\\Http\\Controllers\\Home\\AboutController@allmultiimage',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'about.all.multiimage',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'dashboard' => 
     array (
       'methods' => 
@@ -1434,7 +1603,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::mm0uTiSWK7cspuH9' => 
+    'generated::30g1nvnI6XMiLxnv' => 
     array (
       'methods' => 
       array (
@@ -1455,7 +1624,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::mm0uTiSWK7cspuH9',
+        'as' => 'generated::30g1nvnI6XMiLxnv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1509,7 +1678,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::nQRC3OL667k3579r' => 
+    'generated::ZJbmSvWSQQA6oL1H' => 
     array (
       'methods' => 
       array (
@@ -1530,7 +1699,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::nQRC3OL667k3579r',
+        'as' => 'generated::ZJbmSvWSQQA6oL1H',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1850,7 +2019,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::B4f1VoNK3jsvPJ7Y' => 
+    'generated::ItE119BKf75v1rOk' => 
     array (
       'methods' => 
       array (
@@ -1871,7 +2040,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::B4f1VoNK3jsvPJ7Y',
+        'as' => 'generated::ItE119BKf75v1rOk',
       ),
       'fallback' => false,
       'defaults' => 

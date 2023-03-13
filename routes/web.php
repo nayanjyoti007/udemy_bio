@@ -31,17 +31,19 @@ Route::controller(AdminController::class)->group(function () {
 });
 
 // Home Slider All Route
-Route::controller(HomeSlideController::class)->group(function(){
+Route::controller(HomeSlideController::class)->group(function () {
     Route::get('/admin/slider', 'homeslider')->name('home.slide');
-    Route::post('/admin/update/slide','updateslider')->name('update.slider');
+    Route::post('/admin/update/slide', 'updateslider')->name('update.slider');
 });
 
 // About Page All Route
-Route::controller(AboutController::class)->group(function(){
+Route::controller(AboutController::class)->group(function () {
     Route::get('/about/page', 'aboutpage')->name('about.page');
-    Route::post('/admin/update/about','updateabout')->name('update.about');
+    Route::post('/admin/update/about', 'updateabout')->name('update.about');
     Route::get('/about', 'homeabout')->name('home.about');
-
+    Route::get('/about/multi/image', 'multiimage')->name('about.multiimage');
+    Route::post('/store/multi/image', 'storemultimage')->name('store.multimage');
+    Route::get('/about/all/multi/image', 'allmultiimage')->name('about.all.multiimage');
 });
 
 

@@ -39,6 +39,8 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{route('about.page')}}">About Page</a></li>
+                        <li><a href="{{route('about.multiimage')}}">About Images</a></li>
+                        <li><a href="{{route('about.all.multiimage')}}">All Multi Images</a></li>
                     </ul>
                 </li>
 
